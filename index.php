@@ -74,7 +74,7 @@
     <section id="home">
         <h2>Featured Games</h2>
         <div class="games-container">
-          <form action="/Game store sem v/index.php" method="post">
+          <form action="index.php" method="post">
           <div class="game">
             <img src="https://cdn.akamai.steamstatic.com/steam/apps/1551360/header.jpg?t=1699624973" alt="Game 1">
             <h3>Forza Horizon 5</h3>
@@ -84,7 +84,7 @@
             <input type="hidden" name="games_id" value="1">
           </div>
           </form>
-          <form action="/Game store sem v/index.php" method="post">
+          <form action="index.php" method="post">
           <div class="game">
             <img src="https://cdn.akamai.steamstatic.com/steam/apps/1250410/header.jpg?t=1700500143" alt="Game 2">
             <h3>Microsoft Flight Simulator 2020</h3>
@@ -96,7 +96,7 @@
             <input type="hidden" name="games_id" value="2">
           </div>
           </form>
-          <form action="/Game store sem v/index.php" method="post">
+          <form action="index.php" method="post">
           <div class="game">
             <img src="https://cdn.akamai.steamstatic.com/steam/apps/271590/header.jpg?t=1695060909" alt="Game 1">
             <h3>Grand Theft Auto V</h3>
@@ -108,7 +108,7 @@
             <input type="hidden" name="games_id" value="3">
           </div>
           </form>
-          <form action="/Game store sem v/index.php" method="post">
+          <form action="index.php" method="post">
           <div class="game">
             <img src="https://cdn.akamai.steamstatic.com/steam/apps/1151340/header.jpg?t=1698245440" alt="Game 1">
             <h3>Fallout 76</h3>
@@ -121,10 +121,5 @@
         </div>
       </section>
   </main>
-
-  <!-- <footer>
-    <p>&copy; 2023 GameVerse. All rights reserved.</p>
-  </footer> -->
-
 </body>
 </html>

@@ -16,7 +16,7 @@ session_start()
     <section id="login">
       <div class="login-container">
         <h2>Login to GameVerse</h2>
-        <form action="/Game store sem v/action_login.php" method="post">
+        <form action="action_login.php" method="post">
           <div class="input-group">
             <label for="username">Username</label>
             <input type="text" id="username" name="username" placeholder="Enter your username" required>
@@ -36,10 +36,5 @@ session_start()
       </div>
     </section>
   </main>
-
-  <footer>
-    <!-- Footer content here -->
-  </footer>
-
 </body>
 </html>

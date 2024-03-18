@@ -2,5 +2,5 @@
     session_start();
     session_unset();
     session_destroy();
-    header("location: /Game store sem v/index.php");
+    header("location: index.php");
     exit();

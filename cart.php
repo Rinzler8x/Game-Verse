@@ -101,7 +101,7 @@
             echo "<h5>Cart Empty</h5>";
           }
         ?>
-        <form action="/Game store sem v/action_cart.php" method="post">
+        <form action="action_cart.php" method="post">
           <div class="cart-item">
             <h3>Total Amount: <?php echo $total; ?></h3>
             <button type="submit" name="buy">Buy</button>

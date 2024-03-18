@@ -11,21 +11,21 @@
         require_once 'function.php';
 
         if(emptyInputSignup($name, $email, $username, $password) !== false){
-            header("location: /Game store sem v/editprofile.php?error=Fill all fields");
+            header("location: editprofile.php?error=Fill all fields");
             exit();
         }
         if(invalidEmail($email) !== false){
-            header("location: /Game store sem v/editprofile.php?error=Invalid email");
+            header("location: editprofile.php?error=Invalid email");
             exit();
         }
         if(editExists($conn, $username, $email) !== false){
-            header("location: /Game store sem v/editprofile.php?error=Username already exists");
+            header("location: editprofile.php?error=Username already exists");
             exit();
         }
 
         editUser($conn, $name, $email, $username, $password, $userid);
     }
     else{
-        header("location: /Game store sem v/signup.php?error=Try again");
+        header("location: signup.php?error=Try again");
         exit();
     }

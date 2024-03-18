@@ -20,7 +20,7 @@ session_start()
     <section id="signup">
       <div class="signup-container">
         <h2>Create an Account</h2>
-        <form action="/Game store sem v/action_signup.php" method="post">
+        <form action="action_signup.php" method="post">
           <div class="input-group">
             <label for="fullname">Full Name</label>
             <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>

@@ -45,9 +45,6 @@ session_start()
           <img src="profileAvatar.svg" alt="User Avatar">
         </div>
         <div class="user-data">
-          <!-- <h3>Viraj Naik</h3>
-          <p>Email: viraj123@gmail.com</p>
-          <p>Location: Panaji, India</p> -->
           <?php
             require_once 'dbconnection.php';
 
@@ -55,7 +52,7 @@ session_start()
               $sql = "SELECT * FROM users WHERE users_id = ?;";
               $stmt = mysqli_stmt_init($conn);
               if(!mysqli_stmt_prepare($stmt, $sql)){
-                header("location: /Game store sem v/profile.php?error=stmt failed");
+                header("location: profile.php?error=stmt failed");
                 exit();
               }
 
@@ -115,7 +112,7 @@ session_start()
                   <p>Total Amount: $total </p>
                   <div class='orders'></div>
                   <div>
-                  <form method='POST' action='/Game store sem v/action_delete_bill.php'>
+                  <form method='POST' action='action_delete_bill.php'>
                   <label for='billid'>Enter Bill ID to Delete:</label>
                   <input type='text' name='billid' required>
                   <button type='submit' name='delete'>Delete</button>

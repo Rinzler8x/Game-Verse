@@ -23,7 +23,7 @@
         $sql = "SELECT * FROM users WHERE users_username = ? or users_email = ?;";
         $stmt = mysqli_stmt_init($conn);
         if(!mysqli_stmt_prepare($stmt, $sql)){
-            header("location: /Game store sem v/signup.php?error=stmtfailed");
+            header("location: signup.php?error=stmtfailed");
             exit();
         }
 
@@ -46,13 +46,13 @@
         $sql = "INSERT INTO users (users_username, users_email, users_password, users_name) VALUES (?, ?, ?, ?);";
         $stmt = mysqli_stmt_init($conn);
         if(!mysqli_stmt_prepare($stmt, $sql)){
-            header("location: /Game store sem v/signup.php?error=stmtfailed");
+            header("location: signup.php?error=stmtfailed");
             exit();
         }
         mysqli_stmt_bind_param($stmt, "ssss", $username, $email, $password, $name);
         mysqli_stmt_execute($stmt);
         mysqli_stmt_close($stmt);
-        header("location: /Game store sem v/login.php?error=Please login");
+        header("location: login.php?error=Please login");
         exit();
     }
 
@@ -80,12 +80,12 @@
                     $_SESSION["billid"] = (int)$row1["bill_id"];
                 }
                 mysqli_close($conn);
-                header("location: /Game store sem v/index.php");
+                header("location: index.php");
                 exit();
             } 
         }
         mysqli_close($conn);
-        header("location: /Game store sem v/login.php?error=Invalid username or password");
+        header("location: login.php?error=Invalid username or password");
         exit();
     }
 
@@ -95,11 +95,11 @@
         if($resultData){
             session_start();
             $_SESSION["username"] = $username;
-            header("location: /Game store sem v/profile.php?error=successful");
+            header("location: profile.php?error=successful");
             exit();
         }
         mysqli_close($conn);
-        header("location: /Game store sem v/profile.php?error=Try again");
+        header("location: profile.php?error=Try again");
         exit();
     }
 
@@ -107,7 +107,7 @@
         $sql = "SELECT * FROM users WHERE users_username = ?;";
         $stmt = mysqli_stmt_init($conn);
         if(!mysqli_stmt_prepare($stmt, $sql)){
-            header("location: /Game store sem v/editprofile.php?error=stmtfailed");
+            header("location: editprofile.php?error=stmtfailed");
             exit();
         }
 

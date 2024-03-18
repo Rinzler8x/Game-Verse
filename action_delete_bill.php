@@ -11,7 +11,7 @@
             echo "<script>alert('Order Deleted');</script>";
             echo "<script>window.location.href = 'profile.php';</script>";
         } else {
-            header("location: /Game store sem v/profile.php?error=delete failed");
+            header("location: profile.php?error=delete failed");
             exit();
         }
     }
