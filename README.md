@@ -1,5 +1,5 @@
 # Game Verse
-## Gamers Verse is an immersive online platform designed for gaming enthusiasts to explore, purchase, and connect with their favorite video games. With an intuitive user interface and a wide selection of titles, Gamer Verse aims to be the one stop destination for all your video game needs.
+## Game Verse is an immersive online platform designed for gaming enthusiasts to explore, purchase, and connect with their favorite video games. With an intuitive user interface and a wide selection of titles, Gamer Verse aims to be the one stop destination for all your video game needs.
 
 **Features:**
 - **User registration and Login:** User can create personal account by providing full name, username and password.
