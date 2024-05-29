@@ -5,7 +5,7 @@
 - **User registration and Login:** User can create personal account by providing full name, username and password.
 - **Browse and Purchase Games:** The website offers a vast library of video games. With a user-friendly interface to make quick and easy purchases.
 - **Cart:** The website has cart feature implemented so that users can first select all the games they wish to purchase and pay at 1 time only.
-- **User Profile:** It contains details such as profile picture, name and username. It displays their purchase history where in they can also delete any of purchase receipts if they wish too.
+- **User Profile:** It contains details such as profile picture, name and username. It also displays their purchase history where in they can also delete any of purchase receipts if they wish too.
 
 **Tech Stack:**
 - **Frontend:** HTML & CSS were used to create an easy and user friendly interface UI/UX experience.
